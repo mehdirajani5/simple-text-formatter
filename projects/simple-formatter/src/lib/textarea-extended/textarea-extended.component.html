@@ -1,0 +1,10 @@
+<div
+  #textarea
+  id="{{ elementId }}"
+  [attr.contenteditable]="true"
+  (input)="change($event)"
+  role="textarea"
+  [innerHTML]="textareaValue"
+  class="textarea-extended"
+>
+</div>

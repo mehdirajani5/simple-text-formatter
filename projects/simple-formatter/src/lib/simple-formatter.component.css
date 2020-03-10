@@ -1,0 +1,83 @@
+.search-popover {
+  z-index: 1000 ;
+}
+
+.search-container {
+  top: -10px ;
+  left: 50% ;
+  position: absolute;
+  color: #FFFFFF ;
+  z-index: 1000;
+}
+
+.text-controls {
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+  left: -47px;
+  top: -58px;
+  background: #8a8989;
+  width: 94px;
+  padding: 2px 4px 0 4px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.bold {
+  width: 100%;
+  text-align: center;
+  border-right: 1px solid white;
+}
+
+.italic {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+.link {
+  width: 100%;
+  text-align: center;
+  border-left: 1px solid white;
+}
+
+.link:hover, .italic:hover, .bold:hover  {
+  color: black;
+}
+
+    /* &__search-link {
+      background-color: #333333 ;
+      border-radius: 0 0 5px 5px ;
+      bottom: 0px ;
+      cursor: pointer ;
+      left: 0px ;
+      padding: 5px 22px 5px 22px ;
+      position: absolute ;
+      transform: translateX( -50% ) ;
+      white-space: nowrap ;
+
+      &.no-transform {
+        border-radius: 5px ;
+      }
+
+      &:after {
+        bottom: -11px ;
+        font-size: 15px ;
+        left: 50% ;
+        line-height: 15px ;
+        content: "▼" ;
+        color: #333333 ;
+        position: absolute ;
+        transform: translateX( -50% ) ;
+      }
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__no-border {
+    border: none;
+  }
+} */

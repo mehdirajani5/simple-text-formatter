@@ -1,0 +1,24 @@
+<div>
+  <div *ngIf="hostRectangle" class="search-popover" [style.left.px]="hostRectangle.left"
+    [style.top.px]="hostRectangle.top" [style.width.px]="hostRectangle.width" [style.height.px]="0">
+    <div class="search-container">
+      <div class="text-controls">
+        <div class="bold" (mousedown)="$event.preventDefault()"
+          (mouseup)="$event.stopPropagation(); transformToBold('verse')">
+          <b>B</b>
+        </div>
+        <div class="italic" (mousedown)="$event.preventDefault()"
+          (mouseup)="$event.stopPropagation(); transformToItalic('verse')">
+          I
+        </div>
+        <div class="link" (mousedown)="$event.preventDefault()"
+          (mouseup)="$event.stopPropagation(); prepareLink('verse')">
+          L
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="simple-textformatter {{ className }}" [formGroup]="textFormatterForm">
+    <ng-textarea-extended (ngTextSelection)="prepareRectangle($event)" formControlName="text" [elementId]="editableVerseKey"></ng-textarea-extended>
+  </div>
+</div>
